@@ -12,8 +12,8 @@ client.on('message', message => {
     client.on('message', message => {
     if (message.content === 'lhelp') {
     	message.reply('Comenzile mele sunt
-                      lhelp - comenzile
-                      linfo - despre mine
+                      lhelp  comenzile
+                      linfo  despre mine
                       in curand '  );
   	}
 });
