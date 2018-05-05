@@ -9,6 +9,10 @@ client.on('message', message => {
     if (message.content === 'linfo') {
     	message.reply('Am fost creat de @Lucasbosspro#1695 comanda mea de prefix este l sper sati placa cu mine!'  );
   }
+client.on('message', message => {
+    if (message.content === 'linvite') {
+    	message.reply('http://zipansion.com/MrWV - ca sa vin eu la tine https://discord.gg/tNj3rcP - ca sa vi tu la mine' );
+  }   
 });
 
 // THIS  MUST  BE  THIS  WAY
