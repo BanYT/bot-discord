@@ -9,6 +9,9 @@ client.on('message', message => {
     if (message.content === 'linfo') {
     	message.reply('Am fost creat de @Lucasbosspro#1695 comanda mea de prefix este l sper sati placa cu mine!'  );
   }
+    (message.content === 'lhelp') {
+    	message.reply('Am fost creat de @Lucasbosspro#1695 comanda mea de prefix este l sper sati placa cu mine!'  );
+  }
 });
 
 // THIS  MUST  BE  THIS  WAY
