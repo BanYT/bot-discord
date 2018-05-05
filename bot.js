@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', (games) => {
+client.on('ready', () => {
     console.log('I am ready!');
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+    if (message.content === 'l!info') {
+    	message.reply('Am fost creat de @Lucasbosspro#1695 comanda mea de prefix este l sper sati placa cu mine!'  );
   	}
 });
 
