@@ -8,11 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'linfo') {
     	message.reply('Am fost creat de @Lucasbosspro#1695 comanda mea de prefix este l sper sati placa cu mine!'  );
-  	}
-    client.on('message', message => {
-    if (message.content === 'lhelp') {
-    	message.reply('Comenzile mele sunt lhelp - comenzi linfo - iformati iar restul in curand '  );
-  	}
+  }
 });
 
 // THIS  MUST  BE  THIS  WAY
