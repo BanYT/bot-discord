@@ -6,9 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'say') {
-     	.setColor(0x954D23)
+    if (message.content === 'say') {     	
         message.reply('pong');
+        .setColor(0x954D23)
   	}
 });
 
