@@ -6,8 +6,12 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+    if (message.content === 'say') {
+    	message.delete()
+                const embed = new Discord.RichEmbed()
+		.setColor(0x954D23)
+		.setDescription(message.author.username + " says: " + args.join(" "));
+		message.channel.send({embed})
   	}
 });
 
