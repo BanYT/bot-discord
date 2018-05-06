@@ -7,7 +7,8 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'say') {
-     	.setColor(0x954D23)			
+     	.setColor(0x954D23)
+        message.reply('pong');
   	}
 });
 
