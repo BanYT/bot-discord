@@ -1,17 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-
-
-Client.on("ready", () => {
-	console.log("online");
+client.on('ready', () => {
+    console.log('I am ready!');
 });
 
-
-Client.on("message", async (message) => {	
-	if (command === "ping") {
-		message.channel.send(`Pong! Time took: ${Date.now() - message.createdTimestamp} ms`);
-	} else
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('pong');
+  	
+    } else
 
 	if (command === "say") {
 		message.delete()
