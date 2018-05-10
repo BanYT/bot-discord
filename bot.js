@@ -8,7 +8,8 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'tata') {     	
         message.reply('tu esti tata? da!!!');
-        
+    if (message.content === 'laca') {     	
+        message.reply('tu esti tata? da!!!');
   	}
 });
 
