@@ -14,6 +14,7 @@ client.on('guildMemberAdd', member => {
 
         channel.sendEmbed(embed);
 });
+
 });
 
 client.on('message', message => {
