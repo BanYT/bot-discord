@@ -11,7 +11,6 @@ client.on('guildMemberAdd', member => {
         .addField('✘ | Nume: ', ${member})
         .addField('✘ | Bun Venit !', Bun Venit Pe Server Sedare Placuta, ${member})
         .setTimestamp()
-
         channel.sendEmbed(embed);
 });
 
