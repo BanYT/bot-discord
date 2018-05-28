@@ -5,7 +5,7 @@ const bot = new Discord.Client({disableEveryone: true})
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setGame("stargang.ml | /help|PayPal.Me/Roarmice");
+  bot.user.setGame("stargang.ml | /help| PayPal.Me/Roarmice");
 });
 
 bot.login(botconfig.token);
