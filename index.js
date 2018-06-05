@@ -1,9 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-
-const bot = new Discord.Client({disableEveryone: true})
-
   client.on('message', message => {    
     if(message.content.startsWith('/mass')) {    
     if(message.author.id === "419472407816830986" ||
@@ -19,4 +16,4 @@ member.send(reason)
 message.delete() }})}}} });
 
 
-bot.login(botconfig.token);
+client.login("NDQ0MjAxNjU5MDUzMzc1NDg4.DehW5Q.cbcRbcas1FQMReDAcV7ghpwerlU");
