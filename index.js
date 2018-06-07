@@ -11,7 +11,6 @@ client.on('message', message => {
         .setColor('#FF000')
         .setThumbnail()
         .addField(' ', `${message}`)
-
         .setTimestamp()
 
         channel.sendEmbed(embed);
