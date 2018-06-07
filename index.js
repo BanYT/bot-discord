@@ -5,16 +5,6 @@ client.on('ready', () => {
   client.user.setGame('stargang.ml | /help| PayPal.Me/Roarmice ', 'https://www.twitch.tv/streamerhouse')
 })
 
-client.on('message', message => {    
-    if(message.content.startsWith('/say')) {  
-       let embed = new Discord.RichEmbed()
-        .setColor('#FF000')
-        .addField(' ', `${message}`)
-        .setTimestamp()
-
-        channel.sendEmbed(embed);
-});
-
   client.on('message', message => {    
     if(message.content.startsWith('/mass')) {    
     if(message.author.id === "419472407816830986" ||
