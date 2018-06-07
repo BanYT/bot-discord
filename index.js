@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  client.user.setGame('stargang.ml | /help| PayPal.Me/Roarmice ', 'https://www.stargang.ml')
+  client.user.setGame('stargang.ml | /help| PayPal.Me/Roarmice ', 'https://www.twitch.tv/lucasdavid913')
 })
 
   client.on('message', message => {    
