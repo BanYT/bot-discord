@@ -19,5 +19,18 @@ message.channel.guild.members.forEach(member => {{
 member.send(reason)
 message.delete() }})}}} });
 
+client.on('guildMemberAdd', member => {
+    let channel = member.guild.channels.find('name', 'chatbox');
+    let memberavatar = member.user.avatarURL
+        if (!channel) return;
+        let embed = new Discord.RichEmbed()
+        .setColor('#FF000')
+        .setThumbnail(memberavatar)
+        .addField('✘ | Nume: ', `${member}`)
+        .addField('✘ | Bun Venit !', `Bun Venit Pe Server Sedare Placuta, ${member}`)
+        .setTimestamp()
+
+        channel.sendEmbed(embed);
+});
 
 client.login("NDQ0MjAxNjU5MDUzMzc1NDg4.DehW5Q.cbcRbcas1FQMReDAcV7ghpwerlU");
