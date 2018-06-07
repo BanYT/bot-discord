@@ -9,7 +9,6 @@ client.on('message', message => {
     if(message.content.startsWith('/say')) {  
        let embed = new Discord.RichEmbed()
         .setColor('#FF000')
-        .setThumbnail()
         .addField(' ', `${message}`)
         .setTimestamp()
 
