@@ -1,6 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+client.on('ready', () => {
+  client.user.setGame('Type || ^^help ', 'https://www.twitch.tv/streamerhouse')
+})
+
   client.on('message', message => {    
     if(message.content.startsWith('/mass')) {    
     if(message.author.id === "419472407816830986" ||
