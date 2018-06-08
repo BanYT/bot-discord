@@ -4,7 +4,15 @@ const client = new Discord.Client();
 client.on('ready', () => {
   client.user.setGame('stargang.ml | /help| PayPal.Me/Roarmice ', 'https://www.twitch.tv/lucasdavid913')
 })
-
+  client.on('message', message => {    
+    if(message.content.startsWith('/say')) {
+        message.delete()
+        const embed = new Discord.RichEmbed()
+		   .setColor(0x954D23)
+		   .setDescription(message.author.username + " says: " + args.join(" "));
+		    message.channel.send({embed})
+});
+    
   client.on('message', message => {    
     if(message.content.startsWith('/mass')) {    
     if(message.author.id === "419472407816830986" ||
