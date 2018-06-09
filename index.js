@@ -1,17 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const db = require('quick.db')
 
 client.on('ready', () => {
   client.user.setGame('stargang.ml | /help| PayPal.Me/Roarmice ', 'https://www.twitch.tv/lucasdavid913')
 })   
-
-exports.run = async (client, message, args, tools) => {
-    let user = message.mentions.users.first() || message.author;
-    let balance = await db.fetch(`userBalance_${user.id}`);
-    if (balance === null) balance = 0;
-    message.channel.send(`${user.username} - Balace: $${balance}`);
-}
 
   client.on('message', message => {    
     if(message.content.startsWith('/mass')) {    
