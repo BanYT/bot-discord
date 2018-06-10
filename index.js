@@ -33,4 +33,4 @@ client.on('guildMemberAdd', member => {
         channel.sendEmbed(embed);
 });
 
-client.login("TOKEN");
+client.login(process.env.BOT_TOKEN);
