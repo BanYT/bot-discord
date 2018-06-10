@@ -33,4 +33,4 @@ client.on('guildMemberAdd', member => {
         channel.sendEmbed(embed);
 });
 
-client.login("NDQ0MjAxNjU5MDUzMzc1NDg4.DehW5Q.cbcRbcas1FQMReDAcV7ghpwerlU");
+client.login(TOKEN);
