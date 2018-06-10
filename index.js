@@ -20,8 +20,14 @@ member.send(reason)
 message.delete() }})}}} });
 
 client.on('message', msg => {
-    if (msg.content === '*invite') {
+    if (msg.content === '/invite') {
       msg.channel.send('Invite **Star Gang** https://discordapp.com/oauth2/authorize?client_id=452911194366541850&scope=bot&permissions=8  :tada:');
+    }
+  });
+
+client.on('message', msg => {
+    if (msg.content === '*help') {
+      msg.channel.send('`? Comenzi ?` , /invite');
     }
   });
 
