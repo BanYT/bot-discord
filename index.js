@@ -19,6 +19,13 @@ message.channel.guild.members.forEach(member => {{
 member.send(reason)
 message.delete() }})}}} });
 
+client.on('message', msg => {
+    if (msg.content === '*invite') {
+      msg.channel.send('Invite **Star Gang** 
+      https://discordapp.com/oauth2/authorize?client_id=452911194366541850&scope=bot&permissions=8  :tada:');
+    }
+  });
+
 client.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', 'chatbox');
     let memberavatar = member.user.avatarURL
