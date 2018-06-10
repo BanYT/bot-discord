@@ -26,8 +26,9 @@ client.on('message', msg => {
   });
 
 client.on('message', msg => {
-    if (msg.content === '*help') {
-      msg.channel.send('`? Comenzi ?` , /invite');
+    if (msg.content === '/help') {
+      msg.channel.send('`? Comenzi ?` ,
+                          /invite');
     }
   });
 
